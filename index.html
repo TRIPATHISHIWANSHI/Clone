@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imgbg">
+        <img src="image.png" id="img-in-bg" />
+      </div>
+      <div class="formContainer">
+        <div class="welcome">Welcome to</div>
+        <div class="unstop">Unstop</div>
+        <div class="google">
+          <img src="google.png" />
+          <p>Login with Google</p>
+        </div>
+        <div class="fb">
+          <img src="fb.png" />
+          <p>Login with Facebook</p>
+        </div>
+        <br /><br />
+        <div class="OR">
+          <hr width="40%" size="2" />
+          <p>OR</p>
+          <hr width="40%" size="2" />
+        </div>
+        <div class="formElement">
+          <form id="loginForm">
+            <div class="input-formElement">
+              <div class="flex-label">
+                <img src="userIcon.png" />
+                <label for="userName">User name</label>
+              </div>
+              <input type="text" name="userName" placeholder="username" id="userName" required/>
+            </div>
+            <div class="errorUsername"></div>
+            <br />
+            <div class="input-formElement">
+              <div class="flex-label">
+                <img src="emailIcon.png" />
+                <label for="email"> Email</label>
+              </div>
+              <input
+                type="email"
+                name="email"
+                id="emailID"
+                required
+                placeholder="username@gmail.com"
+              />
+              <div class="errorEmail"></div>
+            </div>
+            <br />
+            <div class="input-formElement">
+              <div class="flex-label">
+                <img src="password.png" id="first" />
+                <label for="password">Password </label>
+                <img src="viewPassword.png" id="second" />
+              </div>
+              <input type="password" id="password" required placeholder="***********" />
+            </div>
+            <div class="errorPassword"></div>
+            <br />
+            <div class="rem-forgot">
+              <input type="checkbox" />
+              <label for="checkbox">Remember me</label>
+              <p>Forgot Password</p>
+            </div>
+            <br />
+            <button type="submit" id="submit">Login</button>
+        </div>
+        <p class="register">Don't have an account? <a href="#">Register</a></p>
+      </div>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
